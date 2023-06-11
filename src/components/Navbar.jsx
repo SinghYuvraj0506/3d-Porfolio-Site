@@ -3,6 +3,7 @@ import { styles } from "../styles";
 import { Link } from "react-router-dom";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
+import mixpanel from "mixpanel-browser";
 
 const Navbar = () => {
   const [active, setActive] = useState(""); // Knows where we are
@@ -11,12 +12,14 @@ const Navbar = () => {
   const navRef = useRef();
 
   const handleScroll = () => {
-    if (window.scrollY > 25) {
-      navRef.current.classList.add("bg-primary");
-      navRef.current.classList.remove("bg-quaternary");
-    } else {
-      navRef.current.classList.add("bg-quaternary");
-      navRef.current.classList.remove("bg-primary");
+    if (navRef.current) {
+      if (window.scrollY > 25) {
+        navRef.current.classList.add("bg-primary");
+        navRef.current.classList.remove("bg-quaternary");
+      } else {
+        navRef.current.classList.add("bg-quaternary");
+        navRef.current.classList.remove("bg-primary");
+      }
     }
   };
 
@@ -56,13 +59,18 @@ const Navbar = () => {
                 } hover:text-white text-[18px] font-medium cursor-pointer`}
                 onClick={() => {
                   setActive(e?.title);
+                  mixpanel.track(`Clicked Navlinks`, {
+                    section: e?.title,
+                  });
                 }}
               >
                 {e?.id ? (
-                      <a href={`#${e?.id}`}>{e?.title}</a>
-                    ) : (
-                      <a href={e?.link} target="_blank">{e?.title}</a>
-                    )}
+                  <a href={`#${e?.id}`}>{e?.title}</a>
+                ) : (
+                  <a href={e?.link} target="_blank">
+                    {e?.title}
+                  </a>
+                )}
               </li>
             );
           })}
@@ -94,12 +102,17 @@ const Navbar = () => {
                     onClick={() => {
                       setToggle(!toggle);
                       setActive(e?.title);
+                      mixpanel.track(`Clicked Navlinks`, {
+                        section: e?.title,
+                      });
                     }}
                   >
                     {e?.id ? (
                       <a href={`#${e?.id}`}>{e?.title}</a>
                     ) : (
-                      <a href={e?.link} target="_blank">{e?.title}</a>
+                      <a href={e?.link} target="_blank">
+                        {e?.title}
+                      </a>
                     )}
                   </li>
                 );

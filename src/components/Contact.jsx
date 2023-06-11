@@ -12,6 +12,7 @@ import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 
 import "react-toastify/dist/ReactToastify.css";
+import mixpanel from "mixpanel-browser";
 
 const Contact = () => {
   const [form, setForm] = useState({
@@ -27,6 +28,8 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e?.preventDefault();
     setLoading(true);
+
+    mixpanel.track("Clicked Send on Contact section")
 
     emailjs
       .send(
