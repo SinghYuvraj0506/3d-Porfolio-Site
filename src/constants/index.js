@@ -14,21 +14,23 @@ import {
     mongodb,
     git,
     figma,
-    docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
+    anchors,
+    ravi,
+    yflix,
+    talker,
     threejs,
+    aws,
+    anchorsweb
   } from "../assets";
   
   export const navLinks = [
     {
       id: "about",
       title: "About",
+    },
+    {
+      link: "https://blogs.yuvrajsingh.me/",
+      title: "Blogs",
     },
     {
       id: "work",
@@ -46,7 +48,7 @@ import {
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "Frontend Developer",
       icon: mobile,
     },
     {
@@ -54,7 +56,7 @@ import {
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "Freelancer",
       icon: creator,
     },
   ];
@@ -73,10 +75,6 @@ import {
       icon: javascript,
     },
     {
-      name: "TypeScript",
-      icon: typescript,
-    },
-    {
       name: "React JS",
       icon: reactjs,
     },
@@ -85,8 +83,8 @@ import {
       icon: redux,
     },
     {
-      name: "Tailwind CSS",
-      icon: tailwind,
+      name: "TypeScript",
+      icon: typescript,
     },
     {
       name: "Node JS",
@@ -95,6 +93,10 @@ import {
     {
       name: "MongoDB",
       icon: mongodb,
+    },
+    {
+      name: "Tailwind CSS",
+      icon: tailwind,
     },
     {
       name: "Three JS",
@@ -109,62 +111,25 @@ import {
       icon: figma,
     },
     {
-      name: "docker",
-      icon: docker,
-    },
+      name:"aws",
+      icon:aws,
+    }
   ];
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      title: "Full Stack Developer",
+      company_name: "Anchors",
+      icon: anchors,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "Sept 2022 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Developed and maintained a web-based SAAS platform using the MERN stack from scratch.",
+        "Collaborated with cross-functional teams, including designers, product managers, and other developers, to create high-quality products.",
+        "Implemented responsive design principles to ensure optimal user experience across different devices and platforms.",
+        "Ensured cross-browser compatibility for seamless performance on various web browsers.",
+        "Successfully handled the deployment of the platform on AWS and leveraged GitHub extensively for version control and collaborative development.",
+        "Took charge of hiring and managing a team of talented developers, while also reviewing their code to maintain code quality and adherence to best practices.",
       ],
     },
   ];
@@ -172,93 +137,77 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "Yuvraj is a skilled and reliable web developer who has greatly contributed to Anchors for 9 months. His problem-solving abilities and expertise in web development have been invaluable. I highly recommend Yuvraj for his exceptional skills and dedication to delivering high-quality work.",
+      name: "Ravi Ahirwar",
+      designation: "Founder & CEO",
+      company: "Anchors",
+      image: ravi,
     },
   ];
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Yflix",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Web based platform that allows users to search any TV Shows or movies, get their information and also the platform recommends the similar TV Shows/movies to watch.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "firebase",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "tmdbapi",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: yflix,
+      source_code_link: "https://github.com/SinghYuvraj0506/Yflix---Movie-Data-App",
+      demo_url:"https://yflix.netlify.app/"
     },
     {
-      name: "Job IT",
+      name: "Anchors",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "anchors is a SAAS platform , which is an exclusive application for creators over various platform. It has the ability to add documents, video for users and also tracks the traffic on the site and display the data accordingly.",
       tags: [
         {
-          name: "react",
+          name: "mern stack",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "aws",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "devops",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: anchorsweb,
+      // source_code_link: "https://github.com/",
+      demo_url:"https://www.anchors.in/"
+
     },
     {
-      name: "Trip Guide",
+      name: "Talker",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Talker is a web application built with the MERN stack (MongoDB, Express, React, Node.js) and used Socket-IO that allows users to chat with each other in real-time.",
       tags: [
         {
-          name: "nextjs",
+          name: "mern stack",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
+          name: "socket io",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: talker,
+      source_code_link: "https://github.com/SinghYuvraj0506/Talker---A-Modern-Chatting-App",
+      demo_url:"https://talker-chat-app.netlify.app/"
     },
   ];
   

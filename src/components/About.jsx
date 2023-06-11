@@ -27,7 +27,7 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
+        <p className={styles.sectionSubText}>Who am i</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
 
@@ -35,11 +35,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I enjoy taking complex problems and turning them into simple and
-        beautiful interface designs.I also love the logic and structure of
-        coding and always strive to write elegant and efficient code,whether it
-        be HTML,CSS,Node or React. When I'm not coding or pushing pixels,you'll
-        find me learning new skills or playing cricket or watching web series.
+        Welcome to my website! I'm passionate about transforming complex problems into beautiful, user-friendly designs. With a love for the logic and structure of coding, I strive to write elegant and efficient code in HTML, CSS, Node, and React. Beyond coding and design, I also delve into basic DevOps practices, CI/CD, and more. My tech stack revolves around MERN (MongoDB, Express.js, React, and Node.js), empowering me to create scalable and robust applications. When I'm not coding or pushing pixels, you'll find me honing new skills, playing cricket, or engrossed in captivating web series. Join me as we explore technology and innovation together.
       </motion.p>
 
       <div className="mt-4 flex flex-wrap gap-10">
