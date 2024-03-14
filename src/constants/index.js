@@ -1,26 +1,6 @@
 import {
-    mobile,
-    backend,
-    creator,
-    web,
-    javascript,
-    typescript,
-    html,
-    css,
-    reactjs,
-    redux,
-    tailwind,
-    nodejs,
-    mongodb,
-    git,
-    figma,
     anchors,
     ravi,
-    yflix,
-    talker,
-    threejs,
-    aws,
-    anchorsweb
   } from "../assets";
   
   export const navLinks = [
@@ -45,74 +25,74 @@ import {
   const services = [
     {
       title: "Web Developer",
-      icon: web,
+      icon: "https://res.cloudinary.com/dfboqenlr/image/upload/v1710425824/web_qdxwtd.png",
     },
     {
       title: "Frontend Developer",
-      icon: mobile,
+      icon: "https://res.cloudinary.com/dfboqenlr/image/upload/v1710425823/creator_snhrz3.png",
     },
     {
       title: "Backend Developer",
-      icon: backend,
+      icon: "https://res.cloudinary.com/dfboqenlr/image/upload/v1710425823/mobile_rgxxqa.png",
     },
     {
       title: "Freelancer",
-      icon: creator,
+      icon: "https://res.cloudinary.com/dfboqenlr/image/upload/v1710425823/backend_jasukc.png",
     },
   ];
   
   const technologies = [
     {
       name: "HTML 5",
-      icon: html,
+      icon: "https://res.cloudinary.com/dfboqenlr/image/upload/v1710426046/html_ri97lx.png",
     },
     {
       name: "CSS 3",
-      icon: css,
+      icon: "https://res.cloudinary.com/dfboqenlr/image/upload/v1710426045/css_bgnksv.png",
     },
     {
       name: "JavaScript",
-      icon: javascript,
+      icon: "https://res.cloudinary.com/dfboqenlr/image/upload/v1710426046/javascript_rtvvjn.png",
     },
     {
       name: "React JS",
-      icon: reactjs,
+      icon: "https://res.cloudinary.com/dfboqenlr/image/upload/v1710426047/reactjs_pxbukl.png",
     },
     {
       name: "Redux Toolkit",
-      icon: redux,
+      icon: "https://res.cloudinary.com/dfboqenlr/image/upload/v1710426047/redux_adwuv9.png",
     },
     {
       name: "TypeScript",
-      icon: typescript,
+      icon: "https://res.cloudinary.com/dfboqenlr/image/upload/v1710426048/typescript_meklii.png",
     },
     {
       name: "Node JS",
-      icon: nodejs,
+      icon: "https://res.cloudinary.com/dfboqenlr/image/upload/v1710426047/nodejs_y215o7.png",
     },
     {
       name: "MongoDB",
-      icon: mongodb,
+      icon: "https://res.cloudinary.com/dfboqenlr/image/upload/v1710426046/mongodb_a46bbm.png",
     },
     {
       name: "Tailwind CSS",
-      icon: tailwind,
+      icon: "https://res.cloudinary.com/dfboqenlr/image/upload/v1710426048/tailwind_itgxpn.png",
     },
     {
       name: "Three JS",
-      icon: threejs,
+      icon: "https://res.cloudinary.com/dfboqenlr/image/upload/v1710426048/threejs_fnrxp6.svg",
     },
     {
       name: "git",
-      icon: git,
+      icon: "https://res.cloudinary.com/dfboqenlr/image/upload/v1710426046/git_y8dgyq.png",
     },
     {
       name: "figma",
-      icon: figma,
+      icon: "https://res.cloudinary.com/dfboqenlr/image/upload/v1710426045/figma_rtxtjj.png",
     },
     {
       name:"aws",
-      icon:aws,
+      icon:"https://res.cloudinary.com/dfboqenlr/image/upload/v1710426045/aws_ydnhnx.png",
     }
   ];
   
@@ -137,7 +117,7 @@ import {
   const testimonials = [
     {
       testimonial:
-      "Yuvraj is a skilled and reliable web developer who has greatly contributed to Anchors for 9 months. His problem-solving abilities and expertise in web development have been invaluable. I highly recommend Yuvraj for his exceptional skills and dedication to delivering high-quality work.",
+      "Yuvraj is a skilled and reliable web developer who has greatly contributed to Anchors for 1.5 years. His problem-solving abilities and expertise in web development have been invaluable. I highly recommend Yuvraj for his exceptional skills and dedication to delivering high-quality work.",
       name: "Ravi Ahirwar",
       designation: "Founder & CEO",
       company: "Anchors",
@@ -146,6 +126,104 @@ import {
   ];
   
   const projects = [
+    {
+      name: "Talkie",
+      description:
+        "Fully fledged video calling app similar to Omegle. Built using the MERN stack + TypeScript for development. Demonstrated proficiency in frontend and backend development as well as real-time communication protocols.",
+      tags: [
+        {
+          name: "mern",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "webRTC",
+          color: "green-text-gradient",
+        },
+        {
+          name: "socketIo",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "typescript",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: "https://res.cloudinary.com/dfboqenlr/image/upload/v1710425650/talkie_eeavcn.png",
+      source_code_link: "https://github.com/SinghYuvraj0506/Omegle-clone",
+      demo_url:"https://www.linkedin.com/feed/update/urn:li:activity:7163393800088870912/"
+    },
+    {
+      name: "Rejouice - An Awwwards Landing Page",
+      description:
+        "Fully fledged video calling app similar to Omegle. Built using the MERN stack + TypeScript for development. Demonstrated proficiency in frontend and backend development as well as real-time communication protocols.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "gsap",
+          color: "green-text-gradient",
+        },
+        {
+          name: "socketIo",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "typescript",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: "https://res.cloudinary.com/dfboqenlr/image/upload/v1710425649/rejouice_xxbhdu.png",
+      source_code_link: "https://github.com/SinghYuvraj0506/Rejouice-ui-clone",
+      demo_url:"https://rejouice-ui.netlify.app/"
+    },
+    {
+      name: "Event Hosting Platform",
+      description:
+        "Fully fledged Event Hosting SAAS Platform with features like Creation + automatic Banner generation ,  Automatic WhatsApp and email reminders , Payment Gateway Integration , Data Collection and Tracking & Referral and Leaderboard System",
+      tags: [
+        {
+          name: "mern stack",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "aws",
+          color: "green-text-gradient",
+        },
+        {
+          name: "devops",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: "https://res.cloudinary.com/dfboqenlr/image/upload/v1710425531/portfolio/anchors_sstt5i.png",
+      // source_code_link: "https://github.com/",
+      demo_url:"https://events.anchors.in/"
+
+    },
+    {
+      name: "Industry Connect - A Hiring Platform",
+      description:
+        "Industry Connect is a fully-fledged MERN stack-based hiring Platform with some great algorithms to get appropriate search results.",
+      tags: [
+        {
+          name: "mern stack",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "green-text-gradient",
+        },
+        {
+          name: "devops",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: "https://res.cloudinary.com/dfboqenlr/image/upload/v1710425647/industryconnect_hvms71.png",
+      // source_code_link: "https://github.com/",
+      demo_url:"https://www.industryconnect.co.in/"
+
+    },
     {
       name: "Yflix",
       description:
@@ -164,32 +242,9 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: yflix,
+      image: "https://res.cloudinary.com/dfboqenlr/image/upload/v1710425825/yflix_c30c6f.png",
       source_code_link: "https://github.com/SinghYuvraj0506/Yflix---Movie-Data-App",
       demo_url:"https://yflix.netlify.app/"
-    },
-    {
-      name: "Anchors",
-      description:
-        "anchors is a SAAS platform , which is an exclusive application for creators over various platform. It has the ability to add documents, video for users and also tracks the traffic on the site and display the data accordingly.",
-      tags: [
-        {
-          name: "mern stack",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "aws",
-          color: "green-text-gradient",
-        },
-        {
-          name: "devops",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: anchorsweb,
-      // source_code_link: "https://github.com/",
-      demo_url:"https://www.anchors.in/"
-
     },
     {
       name: "Talker",
@@ -205,9 +260,9 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: talker,
+      image: "https://res.cloudinary.com/dfboqenlr/image/upload/v1710425649/talker_nxqowy.png",
       source_code_link: "https://github.com/SinghYuvraj0506/Talker---A-Modern-Chatting-App",
-      demo_url:"https://talker-chat-app.netlify.app/"
+      // demo_url:"https://talker-chat-app.netlify.app/"
     },
   ];
   

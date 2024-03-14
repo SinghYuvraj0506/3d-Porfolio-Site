@@ -20,7 +20,7 @@ module.exports = {
         xs: "450px",
       },
       backgroundImage: {
-        "hero-pattern": "url('/src/assets/herobg.png')",
+        "hero-pattern": "url('https://res.cloudinary.com/dfboqenlr/image/upload/v1710425648/herobg_dlhwt3.png')",
       },
     },
   },
