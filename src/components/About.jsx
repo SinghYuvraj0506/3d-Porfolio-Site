@@ -35,7 +35,13 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        Welcome to my website! I'm passionate about transforming complex problems into beautiful, user-friendly designs. With a love for the logic and structure of coding, I strive to write elegant and efficient code in HTML, CSS, Node, and React. Beyond coding and design, I also delve into basic DevOps practices, CI/CD, and more. My tech stack revolves around MERN (MongoDB, Express.js, React, and Node.js), empowering me to create scalable and robust applications. When I'm not coding or pushing pixels, you'll find me honing new skills, playing cricket, or engrossed in captivating web series. Join me as we explore technology and innovation together.
+        Hey there! I’m a full-stack developer who loves turning complex problems into intuitive, user-centric digital solutions. My work blends clean design with logical, scalable code—powered by a modern stack focused on React, Node.js, TypeScript, and cloud-native practices.
+
+I specialize in building robust apps with the MERN stack, and often go beyond just frontend and backend—dabbling in DevOps, CI/CD pipelines, containerization, and cloud deployments. From real-time systems to SaaS tools, I enjoy building products that are both practical and delightful to use.
+
+When I’m not writing code or shipping features, I’m either leveling up my skills, watching a gripping web series, or playing cricket with friends.
+
+Let’s build the future—one clean commit at a time.
       </motion.p>
 
       <div className="mt-4 flex flex-wrap gap-10">

@@ -6,11 +6,11 @@ import { useEffect } from "react";
 
 const App = () => {
 
-  mixpanel.init(import.meta.env.VITE_MIXPANEL_TOKEN, {debug: true});
+  // mixpanel.init(import.meta.env.VITE_MIXPANEL_TOKEN, {debug: true});
 
-  useEffect(() => {
-    mixpanel.track("Visit the Website")
-  }, [])
+  // useEffect(() => {
+  //   mixpanel.track("Visit the Website")
+  // }, [])
 
   if(window.screen.width < 600){
     return <div className="w-screen h-screen flex gap-5 flex-col items-center justify-center text-center px-4 box-border">
